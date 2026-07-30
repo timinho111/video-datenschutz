@@ -15,12 +15,17 @@
             background: #f5f5f7;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             padding: 24px;
         }
 
         main {
+            width: 100%;
             max-width: 760px;
             margin: 0 auto;
             padding: 32px;
@@ -30,13 +35,28 @@
         }
 
         h1 {
-            margin-top: 0;
-            font-size: 2rem;
+            margin: 0;
+            font-size: clamp(1.75rem, 5vw, 2rem);
+            line-height: 1.2;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            hyphens: auto;
         }
 
         h2 {
             margin-top: 32px;
             font-size: 1.2rem;
+            line-height: 1.3;
+        }
+
+        p,
+        address {
+            overflow-wrap: anywhere;
+            hyphens: auto;
+        }
+
+        address {
+            font-style: normal;
         }
 
         dl {
@@ -55,15 +75,26 @@
 
         a {
             color: #005ea8;
+            overflow-wrap: anywhere;
         }
 
         @media (max-width: 600px) {
             body {
-                padding: 12px;
+                padding: 10px;
             }
 
             main {
-                padding: 22px;
+                padding: 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                margin-top: 28px;
+                font-size: 1.15rem;
             }
 
             dl {
@@ -80,7 +111,7 @@
 
 <body>
 <main>
-    <h1>Datenschutzinformationen zur Videoüberwachung</h1>
+    <h1>Datenschutz&shy;informationen zur Videoüberwachung</h1>
 
     <h2>1. Verantwortlicher</h2>
 
@@ -89,7 +120,7 @@
         An der Flurscheid 28<br>
         61352 Bad Homburg<br>
         E-Mail:
-        <a href="casa.mohr2020@gmail.com">
+        <a href="mailto:casa.mohr2020@gmail.com">
             casa.mohr2020@gmail.com
         </a>
     </address>
@@ -107,37 +138,37 @@
     <h2>3. Rechtsgrundlage und berechtigte Interessen</h2>
 
     <p>
-        Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f
-        DSGVO. Die berechtigten Interessen bestehen im Schutz von Personen
-        und Eigentum, in der Wahrung des Hausrechts sowie in der
-        Beweissicherung bei sicherheitsrelevanten Vorfällen.
+        Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
+        Die berechtigten Interessen bestehen im Schutz von Personen und Eigentum,
+        in der Wahrung des Hausrechts sowie in der Beweissicherung bei
+        sicherheitsrelevanten Vorfällen.
     </p>
 
     <h2>4. Erfasste Bereiche</h2>
 
     <p>
         Erfasst werden ausschließlich die privaten Grundstückszugänge und Außenbereiche.
-        Öffentliche Verkehrsflächen und benachbarte Grundstücke werden durch die Kameraausrichtung
-        und technische Privatzonen ausgeblendet und weder im Livebild angezeigt noch aufgezeichnet.
+        Öffentliche Verkehrsflächen und benachbarte Grundstücke werden durch die
+        Kameraausrichtung und technische Privatzonen ausgeblendet und weder im Livebild
+        angezeigt noch aufgezeichnet.
     </p>
 
     <h2>5. Speicherdauer</h2>
 
     <p>
-        Die Aufzeichnungen werden automatisch spätestens nach 72 Stunden
-        gelöscht, sofern kein sicherheitsrelevanter Vorfall festgestellt
-        wurde. Im Falle eines Vorfalls können die betreffenden Aufnahmen bis
-        zur abschließenden Klärung und erforderlichen Beweissicherung
-        gespeichert werden.
+        Die Aufzeichnungen werden automatisch spätestens nach 72 Stunden gelöscht,
+        sofern kein sicherheitsrelevanter Vorfall festgestellt wurde. Im Falle eines
+        Vorfalls können die betreffenden Aufnahmen bis zur abschließenden Klärung und
+        erforderlichen Beweissicherung gespeichert werden.
     </p>
 
     <h2>6. Empfänger der Aufnahmen</h2>
 
     <p>
-        Eine Weitergabe erfolgt grundsätzlich nicht. Im Falle eines
-        sicherheitsrelevanten Vorfalls können Aufnahmen, soweit erforderlich,
-        an Polizei, Strafverfolgungsbehörden, Gerichte, Rechtsanwälte oder
-        Versicherungen übermittelt werden.
+        Eine Weitergabe erfolgt grundsätzlich nicht. Im Falle eines sicherheitsrelevanten
+        Vorfalls können Aufnahmen, soweit erforderlich, an Polizei,
+        Strafverfolgungsbehörden, Gerichte, Rechtsanwälte oder Versicherungen
+        übermittelt werden.
     </p>
 
     <h2>7. Betroffenenrechte</h2>
@@ -146,9 +177,8 @@
         Betroffene Personen haben im Rahmen der gesetzlichen Voraussetzungen
         insbesondere das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung
         der Verarbeitung sowie ein Recht auf Widerspruch gegen die Verarbeitung.
-        Darüber hinaus besteht im Rahmen der gesetzlichen Voraussetzungen ein Recht auf Datenübertragbarkeit.
-
-        Anfragen können an die oben genannte E-Mail-Adresse gerichtet werden.
+        Darüber hinaus besteht im Rahmen der gesetzlichen Voraussetzungen ein Recht
+        auf Datenübertragbarkeit.
     </p>
 
     <p>
@@ -172,16 +202,16 @@
     <h2>9. Keine automatisierte Entscheidungsfindung</h2>
 
     <p>
-        Eine automatisierte Entscheidungsfindung oder ein Profiling im Sinne
-        von Art. 22 DSGVO findet nicht statt.
+        Eine automatisierte Entscheidungsfindung oder ein Profiling im Sinne von
+        Art. 22 DSGVO findet nicht statt.
     </p>
 
     <h2>10. Bereitstellung dieser Webseite</h2>
 
     <p>
-        Diese Webseite wird über GitHub Pages, einen Dienst der GitHub, Inc., bereitgestellt.
-        Beim Aufruf der Webseite können technisch erforderliche Verbindungsdaten,
-        insbesondere die IP-Adresse, durch GitHub verarbeitet werden.
+        Diese Webseite wird über GitHub Pages, einen Dienst der GitHub, Inc.,
+        bereitgestellt. Beim Aufruf der Webseite können technisch erforderliche
+        Verbindungsdaten, insbesondere die IP-Adresse, durch GitHub verarbeitet werden.
         Weitere Informationen enthält die
         <a
                 href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
